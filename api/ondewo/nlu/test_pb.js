@@ -220,7 +220,7 @@ proto.NewTest.prototype.toObject = function(opt_includeInstance) {
  */
 proto.NewTest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    name: jspb.Message.getFieldWithDefault(msg, 4, "")
+    name: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
   if (includeInstance) {
@@ -257,7 +257,7 @@ proto.NewTest.deserializeBinaryFromReader = function(msg, reader) {
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 4:
+    case 3:
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
@@ -293,7 +293,7 @@ proto.NewTest.serializeBinaryToWriter = function(message, writer) {
   f = message.getName();
   if (f.length > 0) {
     writer.writeString(
-      4,
+      3,
       f
     );
   }
@@ -301,11 +301,11 @@ proto.NewTest.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional string name = 4;
+ * optional string name = 3;
  * @return {string}
  */
 proto.NewTest.prototype.getName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
@@ -314,7 +314,7 @@ proto.NewTest.prototype.getName = function() {
  * @return {!proto.NewTest} returns this
  */
 proto.NewTest.prototype.setName = function(value) {
-  return jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
